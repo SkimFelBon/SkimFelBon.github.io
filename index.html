@@ -40,7 +40,7 @@
 						<div>
 							<p><ul>
 								<li>login into system</li>
-								<li>navigate to existing board</li>
+								<li>create new board</li>
 								<li>add new card</li>
 								<li>add text to title</li>
 								<li>add text to description</li>
@@ -58,39 +58,89 @@
 				</section>
 
 				<section data-transition="convex">
-					<h3>Acceptance testing</h3>
-					<p>Task: Test improper operation on a supported platform.
-					Test it using Chrome, Edge, Firefox etc</p>
-					<p><ul>
-						<p>Test steps:</p>
-						<li>login into system</li>
-						<li>navigate to existing board</li>
-					</ul>
+					<h3>Functional testing</h3>
+					<p>Task: Test attach file feature of trello app</p>
+					<p>Expected result: the files should be the same</p>
+					<div style="display:flex;justify-content:space-between;">
+						<div>
+							<p><ul>
+								<li>login into system</li>
+								<li>navigate to existing board</li>
+								<li>click on attach button</li>
+								<li>upload file</li>
+								<li>refresh page</li>
+								<li>download file</li>
+								<li>compare files</li>
+							</ul>
+							</p>
+						</div>
+						<div>
+							<p><img width="230" src="css/img/attach.png" alt="attach file"></p>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Non-functional testing</h3>
+					<p>UI Testing: Test product's graphical user interface
+						to ensure it meets its written specs
+					</p>
+					<div style="display:flex;">
+						<div>
+							<p>Verify borders of cards aligned correctly</p>
+						</div>
+						<div>
+							<p><img src="css/img/aligment.png" alt="attach file"></p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<p>UI Testing: Test product's graphical user interface
+						to ensure it meets its written specs
+					</p>
+					<p>Verify that names of lists are aligned correctly</p>
+					<p><img src="css/img/aligment1.png" alt="attach file"></p>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Stress testing</h3>
+					<p>Task: Server should allow up to 500 concurrent connections.</p>
+					<p>Procedure: emulate amount of requests to server greater than
+						pick value, for instance, using specific software
+					</p>
+					<p>Expected result: user data should't be lost even in such situation
 					</p>
 				</section>
 
 				<section data-transition="convex">
-					<section data-transition="convex">
-						<h3>localization testing?</h3>
-						<p class="fragment fade-left">YEAP</p>
-					</section>
-					<section data-transition="convex">
-						<h3>Verify that pages are translated correctly</h3>
-					</section>
-				</section>
-
-
-
-				<section data-transition="convex">
-					<section data-transition="convex">
-						<h3>Non-functional testing</h3>
-						<p class="fragment fade-right">test product's graphical user interface</p>
-						<p class="fragment fade-left">to ensure it meets its written specs</p>
-					</section>
+					<h3>Compatibility testing</h3>
+					<p>Task: Test improper operation on a supported platform.
+					Test it using Chrome, Edge, Firefox etc</p>
+					<p>Test Steps: run previous tests using different browsers</p>
 				</section>
 
 				<section data-transition="convex">
-					<h3>YEAP thats all</h3>
+					<h3>Localization testing</h3>
+					<p>Verify that pages are translated correctly</p>
+					<div style="display:flex;">
+						<div>
+							<p><ul>
+								<li>In drop-down menu find option "change Language..."
+								</li>
+								<li>change language</li>
+								<li>verify translation</li>
+							</ul>
+							</p>
+						</div>
+						<div>
+							<p><img src="css/img/language.png" alt="attach file"></p>
+						</div>
+					</div>
+				</section>
+
+
+				<section data-transition="convex">
+					<h3>End</h3>
 				</section>
 			</div>
 		</div>
