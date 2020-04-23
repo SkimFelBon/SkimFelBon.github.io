@@ -1,1 +1,115 @@
-hello world
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>HW4</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="convex">
+					<h2>Testing types</h2>
+					<h4>Testing Trello</h4>
+					<h5>web-based Kanban-style app</h5>
+					<p>
+						<small>Leonid Kozak</small>
+					</p>
+				</section>
+				<section data-transition="convex">
+					<h3>Smoke testing</h3>
+					<p>Task: Test main features of application</p>
+					<div style="display:flex;">
+						<div>
+							<p><ul>
+								<li>login into system</li>
+								<li>navigate to existing board</li>
+								<li>add new card</li>
+								<li>add text to title</li>
+								<li>add text to description</li>
+								<li>save card</li>
+								<li>refresh page</li>
+								<li>check if text in title is the same as expected</li>
+								<li>check if description is the same as expected</li>
+							</ul>
+							</p>
+						</div>
+						<div>
+							<p><img src="css/img/add_card.png" alt="add card"></p>
+						</div>
+					</div>
+				</section>
+
+				<section data-transition="convex">
+					<h3>Acceptance testing</h3>
+					<p>Task: Test improper operation on a supported platform.
+					Test it using Chrome, Edge, Firefox etc</p>
+					<p><ul>
+						<p>Test steps:</p>
+						<li>login into system</li>
+						<li>navigate to existing board</li>
+					</ul>
+					</p>
+				</section>
+
+				<section data-transition="convex">
+					<section data-transition="convex">
+						<h3>localization testing?</h3>
+						<p class="fragment fade-left">YEAP</p>
+					</section>
+					<section data-transition="convex">
+						<h3>Verify that pages are translated correctly</h3>
+					</section>
+				</section>
+
+
+
+				<section data-transition="convex">
+					<section data-transition="convex">
+						<h3>Non-functional testing</h3>
+						<p class="fragment fade-right">test product's graphical user interface</p>
+						<p class="fragment fade-left">to ensure it meets its written specs</p>
+					</section>
+				</section>
+
+				<section data-transition="convex">
+					<h3>YEAP thats all</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
